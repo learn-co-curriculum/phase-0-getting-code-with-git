@@ -2,32 +2,33 @@
 
 ## Learning Goals
 
-- Identify a _remote_ repository
 - Copy a repository to your local machine with `git clone`
 - List remotes with `git remote`
 - Duplicate other organizations' repositories into your own via GitHub with `git fork` 
 
 ## Introduction
 
-Now that we've created local Git repositories, we can create logged histories of
-our projects. What's great about Git and [open
-source](https://opensource.com/resources/what-open-source) is that lots of
-people are _doing the exact same thing_ all around the world all the time.
+Git repositories let us create logged histories of the versions of the files
+we "track." Just think, right now, around the world people are using Git
+to track their projects: Star Trek Fan Fiction, resumes, Ruby Code, JavaScript
+code, PhD theses, etc.
 
-Our next step is to learn how to get others' repositories. In a later
-lesson we'll cover how to push our locally-created repositories onto the
-internet so that others can see our projects. But one step at a time.
+Git not only lets you track files in a local repo on your machine, ou can "share"
+your repo on the internet so that others can use your code. In this lesson
+we'll discuss how to get others' repositories.
 
-## Identify a _remote_ Repository
-
-To work with or collaborate on any Git project, you need to be able to manage
-your _remote_ repositories. Remote repositories are versions of a repository
-that are hosted online—typically, on GitHub.
+In a later lesson we'll cover how to push _our_ locally-created repositories onto the
+internet so that others can see our projects.
 
 ## Copy a Repository to Your Local Machine with `git clone`
 
-We use `git clone` to copy someone else's remote copy of their local repository
-to our machine.
+We use `git clone` to copy someone else's repo from the internet to our _local_ machine.
+We are not getting _their_ repo from their local machine. Instead, they must have
+already "mirrored" their _local_ repository onto the internet. In Git-speak we'd say
+they would have had to have created a _remote repository_: a copy of their local repository,
+but on the internet.
+
+Let's get the code for the popular ReactJS framework.
 
 1. Navigate to the https://github.com/facebook/react repository
 2. Click the "Clone or Download" green button on the right.
@@ -40,14 +41,14 @@ URL for us to use when we clone.
 
 ![Clone Repo Button](http://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
 
-4. In the terminal (accessed through the 'Sandbox' or Learn IDE), we run the
+4. In the terminal,  run the
 `git clone` command. It takes the URL we just copied as an argument, like so:
 
 ```bash
 git clone your-copied-github-url
 ```
 
-This will create a local copy of the GitHub repository on our own machine.
+This will create a _local_ copy of the GitHub repository on our own machine.
 
 ## List Remotes with `git remote`
 
@@ -58,35 +59,44 @@ If you use the `ls` command, you'll see Git created a directory called
 cd react
 ```
 
-Type `git remote` to see each remote available.
+Type `git remote` to see the names of each remote repository (or, "remote") available.
 
-If you've cloned your repository, you should at least see `origin`. The remote
-called `origin` is the default name Git gives to the remote you cloned from:
+If you've cloned your repository, you should see a remote name called `origin`. The remote
+name `origin` is the default name Git gives to the remote you cloned from:
 
 ```bash
 $ git remote
 origin
 ```
 
+Let's prove that the `origin` name has some relationship to the address GitHub gave us.
+
+```bash
+$  git remote show origin
+* remote origin
+  Fetch URL: git@github.com:facebook/react.git
+```
+
+The "remote address" `git@github.com:facebook/react.git` assigned to the
+"remote name," `origin` is the same thing you copied from the
+GitHub web interface. This confirms that the _remote repository_ you 
+_cloned_ automatically set up a _remote_ called `origin`.
+
 ## Duplicate Other Organizations' Repositories into Your Own via GitHub with `git fork`
 
 Forking a GitHub repository is just a way to create a personal, online duplicate
 of it. When you fork a lab, GitHub creates a duplicate from the source
 organization's online version of the repository to **your** local duplicate of
-the repo.
+the repo. You're making a copy of one _remote repository_ to a new _remote
+repository_.
 
 It's like saying "Hey, can I have the Louvre's version of _The Mona Lisa_?" The
-Louve would say no. If you were to create an exact online duplicate by _forking_
-it from `louvre/mona_lisa` to `your-name/mona_lisa` the Louvre would be cut out
-of the, pardon the pun, picture. You could then copy *your* organization's
-version to *your* local machine with `git clone`.
+Louve would say, "No." If you were to create a perfect online duplicate by _forking_
+it from `louvre/mona_lisa` to `your-name/mona_lisa`, and then were to clone
+from _that_ remote repository, then the Louvre can keep their copy and you can
+update your copy as you choose.
 
 ![Fork Button](http://readme-pics.s3.amazonaws.com/fork_button.jpg)
-
-Forking is a very common workflow for working with teams or working with or
-contributing to open sourced content in the GitHub community.  You can fork any
-repository by clicking the "Fork" button at the top right of any GitHub
-repository.
 
 Let's try a _fork_ and _clone_ workflow.
 
@@ -114,7 +124,4 @@ update its `master` branch, **fork**.
 ## Conclusion
 
 GitHub gives developers many ways to collaborate. Using `git fork` and `git
-clone` together allows you to make local copies of others' code. As you saw with
-cloning React, this is something you can do on _any_ public GitHub repository.
-So if you've found a GitHub repository that you'd love to modify for your own
-use, you can use this process to make your own copy and modify away.
+clone` together allows you to make copies of others' code.
