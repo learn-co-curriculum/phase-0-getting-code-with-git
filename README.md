@@ -23,10 +23,12 @@ internet so that others can see our projects.
 ## Copy a Repository to Your Local Machine with `git clone`
 
 We use `git clone` to copy someone else's repo from the internet to our _local_ machine.
-We are not getting _their_ repo from their local machine. Instead, they must have
+We are not getting _their_ repo from _their_ local machine (that would be very creepy).
+
+Instead, they must have
 already "mirrored" their _local_ repository onto the internet. In Git-speak we'd say
 they would have had to have created a _remote repository_: a copy of their local repository,
-but on the internet.
+but on the internet. We'll be cloning that _remote repository_.
 
 Let's get the code for the popular ReactJS framework.
 
@@ -61,7 +63,7 @@ cd react
 
 Type `git remote` to see the names of each remote repository (or, "remote") available.
 
-If you've cloned your repository, you should see a remote name called `origin`. The remote
+Since you cloned your repository, you should see a remote name called `origin`. The remote
 name `origin` is the default name Git gives to the remote you cloned from:
 
 ```bash
@@ -85,9 +87,12 @@ _cloned_ automatically set up a _remote_ called `origin`.
 ## Duplicate Other Organizations' Repositories into Your Own via GitHub with `git fork`
 
 Forking a GitHub repository is just a way to create a personal, online duplicate
-of it. When you fork a lab, GitHub creates a duplicate from the source
-organization's online version of the repository to **your** local duplicate of
-the repo. You're making a copy of one _remote repository_ to a new _remote
+of it. When you fork a repository, GitHub creates a duplicate of that repository
+under your control.
+
+If my GitHub username were `octocat` and I "forked" `facebook/react`, GitHub would
+copy the remote repository `facebook/react` and create it under my name as
+`octocat/react`. It's making a copy of one _remote repository_ to a new _remote
 repository_.
 
 It's like saying "Hey, can I have the Louvre's version of _The Mona Lisa_?" The
@@ -112,7 +117,7 @@ your copy of the repository. If all has gone well, you will see your username at
 the top of the page, followed by a `/` and the name of the repository, along
 with a link just below to the original repository. ([More on forking in the GitHub docs](https://help.github.com/enterprise/2.2/user/articles/fork-a-repo/).)
 
-The important take away is to **not** misuse "fork" and "clone" when speaking
+The important take away is to **not** misuse the words "fork" and "clone" when speaking
 with other Git users. To get a local copy: **clone**; to make an online copy of
 a repository to your personal organization so that you have the ability to
 update its `master` branch, **fork**.
