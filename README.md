@@ -13,7 +13,7 @@ we "track." Just think, right now, around the world people are using Git
 to track their projects: Star Trek Fan Fiction, resumes, Ruby Code, JavaScript
 code, PhD theses, etc.
 
-Git not only lets you track files in a local repo on your machine, ou can "share"
+Git not only lets you track files in a local repo on your machine, you can "share"
 your repo on the internet so that others can use your code. In this lesson
 we'll discuss how to get others' repositories.
 
