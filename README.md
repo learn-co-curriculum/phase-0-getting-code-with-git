@@ -96,7 +96,7 @@ copy the remote repository `facebook/react` and create it under my name as
 repository_.
 
 It's like saying "Hey, can I have the Louvre's version of _The Mona Lisa_?" The
-Louve would say, "No." If you were to create a perfect online duplicate by _forking_
+Louvre would say, "No." If you were to create a perfect online duplicate by _forking_
 it from `louvre/mona_lisa` to `your-name/mona_lisa`, and then were to clone
 from _that_ remote repository, then the Louvre can keep their copy and you can
 update your copy as you choose.
