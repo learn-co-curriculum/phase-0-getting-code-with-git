@@ -32,22 +32,21 @@ but on the internet. We'll be cloning that _remote repository_.
 
 Let's get the code for the popular ReactJS framework.
 
-1. Navigate to the https://github.com/facebook/react repository
-2. Click the "Clone or Download" green button on the right.
-2. Make sure you select `Use SSH` as your URL type.
+1. Navigate to the https://github.com/facebook/react repository.
+2. Click the green "Clone or download" button on the right.
+3. Make sure you select `Use SSH` as your URL type.
 
-![SSH URL](https://files.readme.io/UgsI2ndmR2aH5ky5G1OA_GitHub%20-%20SSH%20-%201.png)
+    ![SSH URL](https://files.readme.io/UgsI2ndmR2aH5ky5G1OA_GitHub%20-%20SSH%20-%201.png)
 
-3. Click the "Copy to clipboard" button (highlighted below). This will copy the
+4. Click the "Copy to clipboard" button (highlighted below). This will copy the
 URL for us to use when we clone.
 
-![Clone Repo Button](http://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
+    ![Clone Repo Button](http://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
 
-4. In the terminal,  run the
-`git clone` command. It takes the URL we just copied as an argument, like so:
+5. In the terminal, run the `git clone` command. It takes the URL we just copied as an argument, like so:
 
 ```bash
-git clone your-copied-github-url
+$ git clone your-copied-github-url
 ```
 
 This will create a _local_ copy of the GitHub repository on our own machine.
@@ -58,7 +57,7 @@ If you use the `ls` command, you'll see Git created a directory called
 `react`. Use `cd` to enter that directory.
 
 ```bash
-cd react
+$ cd react
 ```
 
 Type `git remote` to see the names of each remote repository (or, "remote") available.
