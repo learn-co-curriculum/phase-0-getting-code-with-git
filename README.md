@@ -32,18 +32,18 @@ but on the internet. We'll be cloning that _remote repository_.
 
 Let's get the code for the popular ReactJS framework.
 
-1. Navigate to the https://github.com/facebook/react repository.
-2. Click the green "Clone or download" button on the right.
-3. Make sure you select `Use SSH` as your URL type.
+1.  Navigate to the https://github.com/facebook/react repository.
+2.  Click the green "Clone or download" button on the right.
+3.  Make sure you select `Use SSH` as your URL type.
 
     ![SSH URL](https://files.readme.io/UgsI2ndmR2aH5ky5G1OA_GitHub%20-%20SSH%20-%201.png)
 
-4. Click the "Copy to clipboard" button (highlighted below). This will copy the
-URL for us to use when we clone.
+4.  Click the "Copy to clipboard" button (highlighted below). This will copy the
+    URL for us to use when we clone.
 
-    ![Clone Repo Button](http://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
+        ![Clone Repo Button](http://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
 
-5. In the terminal, run the `git clone` command. It takes the URL we just copied as an argument, like so:
+5.  In the terminal, run the `git clone` command. It takes the URL we just copied as an argument, like so:
 
 ```bash
 $ git clone your-copied-github-url
@@ -79,7 +79,7 @@ $  git remote show origin
 ```
 
 The "remote address" `git@github.com:facebook/react.git` assigned to the
-"remote name," `origin` is the same thing you copied from the
+"remote name" - `origin` - is the same thing you copied from the
 GitHub web interface. This confirms that the _remote repository_ you
 _cloned_ automatically set up a _remote name_ called `origin`.
 
@@ -127,7 +127,4 @@ update its `master` branch, **fork**.
 
 ## Conclusion
 
-GitHub gives developers many ways to collaborate. Using GitHub's "Fork" button and `git
-clone` together allows you to make copies of others' code.
-
-
+GitHub gives developers many ways to collaborate. Using GitHub's "Fork" button and `git clone` together allows you to make copies of others' code.
