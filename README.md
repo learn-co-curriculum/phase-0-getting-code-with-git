@@ -41,7 +41,7 @@ Let's get the code for the popular ReactJS framework.
 4.  Click the "Copy to clipboard" button (highlighted below). This will copy the
     URL for us to use when we clone.
 
-        ![Clone Repo Button](http://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
+        ![Clone Repo Button](https://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
 
 5.  In the terminal, run the `git clone` command. It takes the URL we just copied as an argument, like so:
 
