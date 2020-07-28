@@ -36,12 +36,12 @@ Let's get the code for the popular ReactJS framework.
 2.  Click the green "Clone or download" button on the right.
 3.  Make sure you select `Use SSH` as your URL type.
 
-    ![SSH URL](https://files.readme.io/UgsI2ndmR2aH5ky5G1OA_GitHub%20-%20SSH%20-%201.png)
+    ![SSH URL](https://curriculum-content.s3.amazonaws.com/git-clone-using-ssh.png)
 
 4.  Click the "Copy to clipboard" button (highlighted below). This will copy the
     URL for us to use when we clone.
 
-        ![Clone Repo Button](https://readme-pics.s3.amazonaws.com/clone-repo-clone-url-button.png)
+    ![Clone Repo Button](https://curriculum-content.s3.amazonaws.com/copy-clone-button.png)
 
 5.  In the terminal, run the `git clone` command. It takes the URL we just copied as an argument, like so:
 
