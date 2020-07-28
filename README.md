@@ -36,7 +36,7 @@ Let's get the code for the popular ReactJS framework.
 2.  Click the green "Clone or download" button on the right.
 3.  Make sure you select `Use SSH` as your URL type.
 
-    ![SSH URL](https://curriculum-content.s3.amazonaws.com/git-clone-using-ssh.png =200x)
+    <img src="https://curriculum-content.s3.amazonaws.com/git-clone-using-ssh.png" width="200px" alt="SSH Clone">
 
 4.  Click the "Copy to clipboard" button (highlighted below). This will copy the
     URL for us to use when we clone.
