@@ -104,11 +104,11 @@ update your copy as you choose.
 
 Let's try a _fork_ and _clone_ workflow.
 
-Click the GitHub icon at the top of this page:
+Click the GitHub 'Octocat' icon at the top of this page:
 
-![GitHub Octocat Icon](https://flatiron-client-assets.s3.amazonaws.com/assets/github-learn-button.png)
+![GitHub Octocat Icon](https://curriculum-content.s3.amazonaws.com/git-logo-gray.png)
 
-This will bring you to the "learn-co-students" version of this lesson. Click the
+This will bring you to the "learn-co-curriculum" version of this lesson. Click the
 'Fork' button in the upper right corner of the page. You will be prompted to
 choose where the repository should be forked to, so go ahead and choose your
 account. GitHub will take a few moments to create the fork, then navigate to
