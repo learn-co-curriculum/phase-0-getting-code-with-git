@@ -104,7 +104,7 @@ update your copy as you choose.
 
 Let's try a _fork_ and _clone_ workflow.
 
-Click the GitHub 'Octocat' icon at the top of this page:
+Click the GitHub **Octocat** icon at the top of this page:
 
 ![GitHub Octocat Icon](https://curriculum-content.s3.amazonaws.com/git-logo-gray.png)
 
@@ -112,7 +112,9 @@ This will bring you to the "learn-co-curriculum" version of this lesson. Click t
 'Fork' button in the upper right corner of the page. You will be prompted to
 choose where the repository should be forked to, so go ahead and choose your
 account. GitHub will take a few moments to create the fork, then navigate to
-your copy of the repository. If all has gone well, you will see your username at
+your copy of the repository. 
+
+If all has gone well, you will see your username at
 the top of the page, followed by a `/` and the name of the repository, along
 with a link just below to the original repository. ([More on forking in the GitHub docs](https://help.github.com/enterprise/2.2/user/articles/fork-a-repo/).)
 
@@ -121,10 +123,25 @@ with other Git users. To get a local copy: **clone**; to make an online copy of
 a repository to your personal organization so that you have the ability to
 update its `master` (or `main`) branch, **fork**.
 
-> Often, the original authors will include license information regarding how you
-> can use their repository, so make sure to check before you publish, sell or
-> distribute any material you've forked, cloned and modified.
+## Important Note for Assignments on Canvas 
+
+All Software Engineering lessons in Canvas will have an **Octocat** icon linking to a
+repository of that lesson. Using the process discussed in this lesson, you can fork any
+lesson you'd like.
+
+For _assignments_ in Canvas, you will also see an additional **Fork** button beside the **Octocat**
+
+![fork button](https://curriculum-content.s3.amazonaws.com/fork-link.png)
+
+We encourage you to use this button when you see it to start the forking process. During this phase of
+the course, the **Fork** button in Canvas will do the same thing as clicking GitHub's **Fork** button.
+Later on in the course, the Canvas **Fork** button will behave differently as some assignment steps will 
+be automated.
 
 ## Conclusion
 
 GitHub gives developers many ways to collaborate. Using GitHub's "Fork" button and `git clone` together allows you to make copies of others' code.
+
+Often, the original authors will include license information regarding how you
+can use their repository, so make sure to check before you publish, sell or
+distribute any material you've forked, cloned and modified.
