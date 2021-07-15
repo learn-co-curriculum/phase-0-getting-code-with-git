@@ -6,6 +6,7 @@
 - List remotes with `git remote`
 - Duplicate other organizations' repositories into your own via GitHub with the "Fork" button
 
+
 ## Introduction
 
 Git repositories let us create logged histories of the versions of the files
