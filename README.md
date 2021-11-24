@@ -27,25 +27,24 @@ machine. We are not getting _their_ repo from _their_ local machine (that would
 be very creepy).
 
 Instead, they must have already "mirrored" their _local_ repository onto the
-internet. In Git-speak we'd say they would have had to have created a _remote
+internet. In Git-speak we'd say they would have to have created a _remote
 repository_: a copy of their local repository, but on the internet. We'll be
 cloning that _remote repository_.
 
-Let's get the code for the popular ReactJS framework.
+Let's get the code for the popular ReactJS framework. To review, the steps are:
 
-**1.** Navigate to the https://github.com/facebook/react repository.
-**2.** Click the green "Code" button on the right.
-**3.** Make sure you select `Use SSH` as your URL type.
+1) Navigate to the https://github.com/facebook/react repository.
 
-<img src="https://curriculum-content.s3.amazonaws.com/git-clone-using-ssh.png" width="400px" alt="SSH Clone">
+2) Click the green "Code" button on the right.
 
-**4.** Click the "Copy to clipboard" button (highlighted below). This will copy
-the URL for us to use when we clone.
+3) Make sure `SSH` is selected.
 
-![Copy command to clone repo button](https://curriculum-content.s3.amazonaws.com/copy-clone-command-button.png)
+4) Click the copy button.
 
-**5.** In the terminal, run the `git clone` command. It takes the URL we just
-copied as an argument, like so:
+![clone-repo](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments/clone-repo.gif)
+
+5) In the terminal, navigate to where you want to put the repo and run the
+`git clone` command. It takes the URL we just copied as an argument, like so:
 
 ```console
 $ git clone your-copied-github-url
@@ -65,9 +64,9 @@ $ cd react
 Type `git remote` to see the names of each remote repository (or, "remote")
 available.
 
-Since you cloned your repository, you should see a remote name called `origin`.
-The remote name `origin` is the default name Git gives to the remote you cloned
-from:
+Since you cloned the repository from GitHub, you should see a remote named
+`origin`. The remote name `origin` is the default name Git gives to whatever
+remote you cloned from:
 
 ```console
 $ git remote
@@ -75,7 +74,8 @@ origin
 ```
 
 Let's prove that the `origin` name has some relationship to the address GitHub
-gave us.
+gave us by running `git remote show origin`. The first couple of lines returned
+should look like this:
 
 ```console
 $  git remote show origin
@@ -94,6 +94,10 @@ Forking a GitHub repository is just a way to create a personal, online duplicate
 of it. When you fork a repository, GitHub creates a duplicate of that repository
 under your control.
 
+> Note: This is what you will do for all of the Canvas assignments. Doing this
+> allows you to make changes to your copy of the repo without modifying the
+> parent repo.
+
 If my GitHub username were `octocat` and I "forked" `facebook/react`, GitHub
 would copy the remote repository `facebook/react` and create it under my name as
 `octocat/react`. It's making a copy of one _remote repository_ to a new _remote
@@ -102,29 +106,29 @@ repository_.
 It's like saying "Hey, can I have the Louvre's version of _The Mona Lisa_?" The
 Louvre would say, "No." If you were to create a perfect online duplicate by
 _forking_ it from `louvre/mona_lisa` to `your-name/mona_lisa`, and then were to
-clone from _that_ remote repository, then the Louvre can keep their copy and you
-can update your copy as you choose.
+clone from _that_ remote repository, then the Louvre can keep the original and
+you can update your copy as you choose.
 
 ![Fork Button](http://readme-pics.s3.amazonaws.com/fork_button.jpg)
 
-Let's try a _fork_ and _clone_ workflow.
+Let's review the _fork_ and _clone_ workflow.
 
 Click the GitHub **Octocat** icon at the top of this page:
 
 ![GitHub Octocat Icon](https://curriculum-content.s3.amazonaws.com/git-logo-gray.png)
 
 This will bring you to the "learn-co-curriculum" version of this lesson. Click
-the 'Fork' button in the upper right corner of the page. You will be prompted to
-choose where the repository should be forked to, so go ahead and choose your
+the 'Fork' button in the upper right corner of the page. If you are prompted to
+choose where the repository should be forked to, go ahead and choose your
 account. GitHub will take a few moments to create the fork, then navigate to
 your copy of the repository.
 
 If all has gone well, you will see your username at the top of the page,
-followed by a `/` and the name of the repository, along with a link just below
-to the original repository.
+followed by a `/` and the name of the repository. There will also be a link to
+the original repository.
 ([More on forking in the GitHub docs](https://help.github.com/enterprise/2.2/user/articles/fork-a-repo/).)
 
-The important take away is to **not** misuse the words "fork" and "clone" when
+The important takeaway is **not** to misuse the words "fork" and "clone" when
 speaking with other Git users. To get a local copy: **clone**; to make an online
 copy of a repository to your personal organization so that you have the ability
 to update its `master` (or `main`) branch, **fork**.
@@ -140,11 +144,9 @@ beside the **Octocat**
 
 ![fork button](https://curriculum-content.s3.amazonaws.com/fork-link.png)
 
-We encourage you to use this button when you see it to start the forking
-process. During this phase of the course, the **Fork** button in Canvas will do
-the same thing as clicking GitHub's **Fork** button. Later on in the course, the
-Canvas **Fork** button will behave differently as some assignment steps will be
-automated.
+As discussed in the previous section, you should use this button to start the
+forking process for assignments. This will automate several of the steps for you
+and ensure you get credit for completing assignments in Canvas.
 
 ## Conclusion
 
