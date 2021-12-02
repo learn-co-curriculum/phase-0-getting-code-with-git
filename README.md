@@ -33,11 +33,13 @@ cloning that _remote repository_.
 
 Let's get the code for the popular ReactJS framework.
 
-**1.** Navigate to the https://github.com/facebook/react repository.
+**1.** Navigate to the [React repository](https://github.com/facebook/react).
+
 **2.** Click the green "Code" button on the right.
+
 **3.** Make sure you select `Use SSH` as your URL type.
 
-<img src="https://curriculum-content.s3.amazonaws.com/git-clone-using-ssh.png" width="400px" alt="SSH Clone">
+![Clone using SSH](https://curriculum-content.s3.amazonaws.com/git-clone-using-ssh.png)
 
 **4.** Click the "Copy to clipboard" button (highlighted below). This will copy
 the URL for us to use when we clone.
@@ -127,7 +129,7 @@ to the original repository.
 The important take away is to **not** misuse the words "fork" and "clone" when
 speaking with other Git users. To get a local copy: **clone**; to make an online
 copy of a repository to your personal organization so that you have the ability
-to update its `master` (or `main`) branch, **fork**.
+to update its `main` (or `master`) branch, **fork**.
 
 ## Important Note for Assignments on Canvas
 
