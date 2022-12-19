@@ -20,9 +20,7 @@ the labs you've been working on in this course! For this reason, a lot of the
 content in this lesson will be review.
 
 The important thing to understand is that the forking and cloning workflow that
-you've been using with labs can be used with _any_ repo available on GitHub. But
-of course the learn-co gem is currently handling some of the steps for you, so
-in this lesson, you'll learn how to accomplish those steps "by hand."
+you've been using with labs can be used with _any_ repo available on GitHub.
 
 ## Copy a Repository to Your Local Machine with `git clone`
 
@@ -90,12 +88,12 @@ to the right place.
 ## Duplicate Other Organizations' Repositories into Your Own via GitHub with the "Fork" Button
 
 This is also part of the workflow you've been using for labs: you create your
-own personal copy of the lab by clicking the "Fork" button on Canvas. But you
-can also fork a repo directly from its page on GitHub.
+own personal copy of a lab by clicking the "OctoCat" icon on Canvas, then the
+"Fork" button on GitHub.
 
 Let's go back to the [React repository](https://github.com/facebook/react) on
 GitHub. In the upper right corner of the page, you'll see three buttons,
-including a Fork button:
+including the familiar Fork button:
 
 ![Fork Button](http://readme-pics.s3.amazonaws.com/fork_button.jpg)
 
@@ -104,16 +102,6 @@ on GitHub) will make a copy of the repo and store it in _your_ GitHub account,
 just the same as when you click the Fork button on a lab's Canvas page. Having
 your own copy gives you the ability to update its `main` (or `master`) branch
 without affecting the original repo.
-
-> **Note**: You _could_ use this workflow for labs. Instead of clicking the Fork
-> button on Canvas, you could click the **Octocat** icon next to it. That would
-> open up the lab's repo _without_ forking it, and you could then fork the lab
-> using the Fork button on the repo page.
-
-> **However**, doing so would bypass the `learn-co` gem which means you will
-> need to submit the lab by hand in Canvas and it will not be graded
-> automatically. So be sure to continue using the Fork button on the Canvas page
-> for labs!
 
 ## Conclusion
 
