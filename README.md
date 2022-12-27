@@ -98,10 +98,9 @@ including the familiar Fork button:
 ![Fork Button](http://readme-pics.s3.amazonaws.com/fork_button.jpg)
 
 Clicking the Fork button on the page for this repo (or any other repo available
-on GitHub) will make a copy of the repo and store it in _your_ GitHub account,
-just the same as when you click the Fork button on a lab's Canvas page. Having
-your own copy gives you the ability to update its `main` (or `master`) branch
-without affecting the original repo.
+on GitHub) will make a copy of the repo and store it in _your_ GitHub account.
+Having your own copy gives you the ability to update its `main` (or `master`)
+branch without affecting the original repo.
 
 ## Conclusion
 
